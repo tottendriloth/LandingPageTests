@@ -1,0 +1,95 @@
+h1{
+    font-family: 'Special Elite', cursive;
+}
+.container{
+    text-align: center;
+}
+
+@media screen and (min-width: 499px)
+{
+.profilepic{
+    transition: border-radius 1s ease, filter 1s ease, width 1s ease, height 1s ease, transform 1s ease;
+    border-style: none;
+    border-radius: 100%;
+    filter: grayscale(1) blur(2px);
+    width: 250px;
+    height : 250px;
+}
+.profilepic:hover{
+    filter: grayscale(0) blur(0);
+    border-radius: 25%;
+    width: 300px;
+    height: 300px;
+    transform: rotate(6.28rad);
+}
+}
+@media screen and (max-width: 499px){
+    .profilepic{
+        border-style: none;
+        border-radius: 25%;
+        width: 15.625em;
+        height: 15.625em;
+    }
+}
+
+.navmenu{
+    list-style-type: none;
+    text-align: center;
+}
+
+.navmenu li{
+    display: inline-block;
+}
+
+.navmenu a{
+    font-family: 'Special Elite', cursive;
+    font-size: 25px;
+    /*margin: 0px 10px;*/
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    margin: 0 auto;
+    text-decoration: none;
+
+}
+.notactive  a:before, .notactive  a:after{
+    position: absolute;
+
+    transition: all 0.3s;
+    opacity: 0;
+}
+.notactive  a:before{
+    content: '[';
+    left: 0px;
+    transform: translateX(10px);
+}
+.notactive a:after{
+    content: ']';
+    right: 0px;
+    transform: translateX(-10px);
+}
+
+.notactive a:hover:before,.notactive a:hover:after{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.active a:before{
+    content: '(';
+    left: 0px;
+}
+.active a:after{
+    content: ')';
+    right: 0px;
+}
+
+
+.hellotext{
+    transition: color 0.25s;
+    color:black;
+}
+
+
+.active a{
+    color: black;
+}
