@@ -1,15 +1,21 @@
 h1{
     font-family: 'Special Elite', cursive;
+    font-size: 2em;
+    margin: 2rem auto;
 }
 .container{
     text-align: center;
 }
 
-@media screen and (min-width: 499px)
+body{
+    background: lightgray;
+}
+
+@media screen and (min-width: 500px)
 {
 .profilepic{
     transition: border-radius 1s ease, filter 1s ease, width 1s ease, height 1s ease, transform 1s ease;
-    border-style: none;
+    border-style: solid;
     border-radius: 100%;
     filter: grayscale(1) blur(2px);
     width: 250px;
@@ -23,7 +29,7 @@ h1{
     transform: rotate(6.28rad);
 }
 }
-@media screen and (max-width: 499px){
+@media screen and (max-width: 500px){
     .profilepic{
         border-style: none;
         border-radius: 25%;
@@ -82,6 +88,9 @@ h1{
     content: ')';
     right: 0px;
 }
+.active a{
+    color: black;
+}
 
 
 .hellotext{
@@ -90,6 +99,5 @@ h1{
 }
 
 
-.active a{
-    color: black;
-}
+
+
