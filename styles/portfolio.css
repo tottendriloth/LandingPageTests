@@ -3,6 +3,7 @@
     font-family: Monserrat, sans-serif;
 }
 body{
+    display: none;
     background: lightgray;
 }
 h1{
@@ -52,6 +53,7 @@ hr{
 }
 
 .middle{
+
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -59,10 +61,16 @@ hr{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+
+}
+.middle .text{
+    font-family: sans-serif;
+    color:  lightcoral;
 }
 
 .gallery-item:hover .image{
     filter: grayscale(1);
+    transform: scale(1.1);
 }
 
 .gallery-item:hover .middle{
@@ -84,6 +92,7 @@ hr{
         font-family: Oswald, sans-serif;
         text-align: left;
     }
+
     div.container, h1{
         text-align: left;
         margin-left: 2em;

@@ -8,6 +8,7 @@ h1{
 }
 
 body{
+    display: none;
     background: lightgray;
 }
 
@@ -40,7 +41,6 @@ body{
 
 .navmenu{
     list-style-type: none;
-    text-align: center;
 }
 
 .navmenu li{
@@ -91,6 +91,18 @@ body{
 .active a{
     color: black;
 }
+
+
+a.loading:before, a.loading:after{
+    opacity: 1;
+    transform: translateX(0px);
+
+    transition: all 1s;
+}
+a.loading{
+    color:red;
+}
+
 
 
 .hellotext{

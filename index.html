@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <!-- Links CSS to this this page so all styling in main.css is applied -->
     <link rel="stylesheet" href="styles/main.css">
+    <!-- Gathers Fonts from Google Font Api, In this case the Lobster|Nosifer and Special Elite fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lobster|Nosifer" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
     <title>Home</title>
 </head>
 
 <body>
-    <nav>
-            <ul class="navmenu">
-                <li class="active"> <a href="#"> Home </a> </li>
-                <li class="notactive"> <a href="about.html"> About </a> </li>
-                <li class="notactive"> <a href="portfolio.html"> Portfolio </a> </li>
-                <li class="notactive"> <a href="#"> Contact </a> </li>
-            </ul>
-        </nav>
+    
     <div class="container">
-        
+        <!-- Defines a navigation tag which is used for a group of navigation links -->
+    <nav>  
+            <!-- Creats An UnOrdered List element with class of navmenu-->
+                <ul class="navmenu">
+                    <!-- The first li element is off class active this is used to show this is the current page we are on, and i style it differenly so needed a different class-->
+                    <li class="active"> <a href=""> Home </a> </li>
+                    <!-- these other li tags are used link to the other .html sites on my website. They all have class off notactive so they are able to be used to actually link 
+                    and are styles as such-->
+                    <li class="notactive"> <a href="about.html"> About </a> </li>
+                    <li class="notactive"> <a href="portfolio.html"> Portfolio </a> </li>
+                    <li class="notactive"> <a href=""> Contact </a> </li>
+                </ul>
+            </nav>
+        <!-- This Is the basic header at the top of the page just above the profile picture-->
         <h1 class="hellotext"> Hello, I'm Ben.</h1>
+        <!-- Places Image on the page from a local src of "images/me.jpg", The alt tag is what will be displayed if the image is not loaded properly but also
+        if the user cannont see the image because of external reasons the alt tag can be used by website reading software to describe what they should see-->
         <span><img src="images/me.jpg" alt="profile-pic" class="profilepic"></span>
     </div>
 </body>
+<!-- Enables the use of JQuery in my code-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!-- Basic Smooth link that fades out the current page when a link is clicked, and if the link was an internal link the next page
+will fade in as well-->
 <script src="scripts/SmoothLink.js"></script>
 </html>
